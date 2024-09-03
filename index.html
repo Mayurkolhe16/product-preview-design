@@ -1,64 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Preview Design</title><!DOCTYPE html>
-        <style>
-            body {
-        background-color: #353232;
-    }
-    
-    
-    .main-product-img {
-        width: 450px;
-        height: 450px;
-        object-fit: cover;
-        display: block;
-        margin: 30px auto;
-        border: 2px solid beige;
-        border-radius: 20px;
-        box-shadow: 0px 5px 10px 0px beige
-    }
-    
-    .product-img-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 80px;
-        gap: 35px;
-    }
-    
-    .product-img {
-        height: 60px;
-        width: 60px;
-        border-radius: 5px;
-        object-fit: cover;
-        cursor: pointer;
-        border: 2px solid beige;
-    
-    }
-    
-        </style>
+    <title>Product Review Design</title>
+    <style>
+        body {
+    background-color: #353232;
+}
+
+
+.main-product-img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto;
+    border: 2px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px beige
+}
+
+.product-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 35px;
+}
+
+.product-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid beige;
+
+}
+
+    </style>
 </head>
 <body>
-  
-        <img src="/img1.jpg" class="main-product-img" id="main-product-img"/>
-    
-        <div class="product-img-container">
-            <img src="/img1.jpg" class="product-img" onclick="changeImage('/img1.jpg')"/>
-            <img src="/img2.jpg" class="product-img" onclick="changeImage('/img2.jpg')"/>
-            <img src="/img3.jpg" class="product-img" onclick="changeImage('/img3.jpg')"/>
-            <img src="/img4.jpg" class="product-img" onclick="changeImage('/img4.jpg')"/>
-            <img src="/img5.jpg" class="product-img" onclick="changeImage('/img5.jpg')"/>
-        </div>
-    
-    
-        <script>
-            function changeImage(imageName) {
-                const mainImage = document.getElementById('main-product-img');
-                mainImage.src=imageName;
-            }
-        </script>
-    
+    <img src="./img1.jpeg" class="main-product-img" id="main-product-img"/>
+
+    <div class="product-img-container">
+        <img src="/img1.jpeg" class="product-img" onclick="changeImage('/img1.jpg')"/>
+        <img src="/img2.jpeg" class="product-img" onclick="changeImage('/img2.jpeg')"/>
+        <img src="/img3.jpeg" class="product-img" onclick="changeImage('/img3.jpeg')"/>
+        <img src="/img4.jpeg" class="product-img" onclick="changeImage('/img4.jpeg')"/>
+        <img src="/img5.jpeg" class="product-img" onclick="changeImage('/img5.jpeg')"/>
+    </div>
+
+
+    <script>
+        function changeImage(imageName) {
+            const mainImage = document.getElementById('main-product-img');
+            mainImage.src=imageName;
+        }
+    </script>
+
 </body>
 </html>
