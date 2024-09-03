@@ -6,6 +6,24 @@
     <title>Product Preview Design</title>
 </head>
 <body>
+  
+        <img src="./images/1.jpeg" class="main-product-img" id="main-product-img"/>
+    
+        <div class="product-img-container">
+            <img src="images/1.jpeg" class="product-img" onclick="changeImage('images/1.jpeg')"/>
+            <img src="images/2.jpeg" class="product-img" onclick="changeImage('images/2.jpeg')"/>
+            <img src="images/3.jpeg" class="product-img" onclick="changeImage('images/3.jpeg')"/>
+            <img src="images/4.jpeg" class="product-img" onclick="changeImage('images/4.jpeg')"/>
+            <img src="images/5.jpeg" class="product-img" onclick="changeImage('images/5.jpeg')"/>
+        </div>
+    
+    
+        <script>
+            function changeImage(imageName) {
+                const mainImage = document.getElementById('main-product-img');
+                mainImage.src=imageName;
+            }
+        </script>
     
 </body>
 </html>
